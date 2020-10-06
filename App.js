@@ -20,11 +20,11 @@ var tabContainer = createBottomTabNavigator({
   tabBarIcon:()=>{
     const Rootname=navigation.state.routeName
     console.log(Rootname);
-    if (Rootname==="Login") {
+    if (Rootname==="Write") {
       return(
         <Image style={{width:40,height:40}} source={require('./pictures/book.png')}></Image>
       )
-    } else if (Rootname==="Search") {
+    } else if (Rootname==="Read") {
       return(
         <Image style={{width:40,height:40}} source={require('./pictures/searchingbook.png')}></Image>
       )
